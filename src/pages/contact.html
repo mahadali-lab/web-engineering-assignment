@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - NexoraAI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+  <nav class="bg-gray-950 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <a href="../../index.html" class="text-2xl font-bold text-white">Nexora<span class="text-blue-400">AI</span></a>
+        <button id="nav-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+        <div id="nav-menu" class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="../../index.html" class="text-gray-300 hover:text-white">Home</a>
+          <a href="about.html" class="text-gray-300 hover:text-white">About</a>
+          <a href="contact.html" class="text-blue-400">Contact</a>
+          <a href="signup.html" class="text-gray-300 hover:text-white">Sign Up</a>
+          <a href="signin.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign In</a>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-3 text-sm font-medium">
+        <a href="../../index.html" class="block text-gray-300 hover:text-white">Home</a>
+        <a href="about.html" class="block text-gray-300 hover:text-white">About</a>
+        <a href="contact.html" class="block text-blue-400">Contact</a>
+        <a href="signup.html" class="block text-gray-300 hover:text-white">Sign Up</a>
+        <a href="signin.html" class="block bg-blue-600 text-white px-4 py-2 rounded-lg text-center">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <section class="grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Contact</p>
+        <h1 class="mt-4 text-4xl md:text-5xl font-black">Let’s build something secure.</h1>
+        <p class="mt-6 text-lg text-gray-600">Tell us about your project, goals, or security challenge and we’ll help you move forward with clarity.</p>
+
+        <div class="mt-10 grid sm:grid-cols-2 gap-6">
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200"><p class="text-sm text-gray-500">Email</p><p class="mt-2 font-semibold text-gray-900">mahadali3641@gmail.com</p></div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200"><p class="text-sm text-gray-500">Phone</p><p class="mt-2 font-semibold text-gray-900">+92 347 1027672</p></div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200"><p class="text-sm text-gray-500">Location</p><p class="mt-2 font-semibold text-gray-900">Johar Town, Lahore</p></div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200"><p class="text-sm text-gray-500">Response Time</p><p class="mt-2 font-semibold text-gray-900">Within 24 hours</p></div>
+        </div>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow-lg border border-gray-200">
+        <form id="contact-form" action="https://formspree.io/f/mbgllewa" method="POST" novalidate>
+          <div class="space-y-5">
+            <div>
+              <label for="contact-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+              <input id="contact-name" name="name" type="text" class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <p class="error-message mt-1 text-sm text-red-500"></p>
+            </div>
+            <div>
+              <label for="contact-email" class="block text-sm font-medium text-gray-700">Email</label>
+              <input id="contact-email" name="email" type="email" class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <p class="error-message mt-1 text-sm text-red-500"></p>
+            </div>
+            <div>
+              <label for="contact-subject" class="block text-sm font-medium text-gray-700">Subject</label>
+              <input id="contact-subject" name="subject" type="text" class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <p class="error-message mt-1 text-sm text-red-500"></p>
+            </div>
+            <div>
+              <label for="contact-message" class="block text-sm font-medium text-gray-700">Message</label>
+              <textarea id="contact-message" name="message" rows="5" class="mt-1 w-full border border-gray-300 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+              <p class="error-message mt-1 text-sm text-red-500"></p>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="mt-20 grid lg:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm"><h3 class="font-bold text-xl">Our office</h3><p class="mt-3 text-gray-600">Remote-first team, available online across time zones.</p></div>
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm"><h3 class="font-bold text-xl">Business hours</h3><p class="mt-3 text-gray-600">Mon - Fri, 9:00 AM - 6:00 PM</p></div>
+      <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm"><h3 class="font-bold text-xl">Social</h3><a href="https://www.linkedin.com/in/mahad-ali-802653414/" target="_blank" rel="noopener noreferrer" class="mt-3 inline-block text-blue-600 hover:text-blue-800">LinkedIn</a></div>
+    </section>
+
+    <section class="mt-20 bg-white rounded-3xl border border-gray-200 p-8 shadow-sm">
+      <div class="text-center mb-10">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">FAQ</p>
+        <h2 class="mt-4 text-3xl font-bold">Need quick answers?</h2>
+      </div>
+      <div id="accordion-collapse" data-accordion="collapse">
+        <h2 id="accordion-collapse-heading-1">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true">
+            <span>How long does a project usually take?</span>
+            <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" viewBox="0 0 10 6" fill="none"><path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-1" class="p-5 border border-gray-200 border-t-0"><p class="text-gray-600">Most projects range from 2 to 8 weeks depending on scope, integrations, and required security review.</p></div>
+
+        <h2 id="accordion-collapse-heading-2">
+          <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 focus:ring-4 focus:ring-blue-200" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false">
+            <span>Do you offer consulting only?</span>
+            <svg data-accordion-icon class="w-3 h-3 shrink-0" viewBox="0 0 10 6" fill="none"><path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </h2>
+        <div id="accordion-collapse-body-2" class="hidden p-5 border border-gray-200 border-t-0"><p class="text-gray-600">We can support strategy, design, implementation, and ongoing product enhancement depending on your needs.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-950 text-gray-300 mt-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <a href="../../index.html" class="text-2xl font-bold text-white">Nexora<span class="text-blue-400">AI</span></a>
+          <p class="mt-4 text-sm text-gray-400">Secure AI systems for smarter, more resilient digital growth.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white">Navigation</h3>
+          <ul class="mt-4 space-y-2 text-sm"><li><a href="../../index.html" class="hover:text-white">Home</a></li><li><a href="about.html" class="hover:text-white">About</a></li><li><a href="contact.html" class="hover:text-white">Contact</a></li></ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white">Useful Links</h3>
+          <ul class="mt-4 space-y-2 text-sm"><li><a href="signup.html" class="hover:text-white">Sign Up</a></li><li><a href="signin.html" class="hover:text-white">Sign In</a></li><li><a href="contact.html" class="hover:text-white">Support</a></li></ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white">Contact</h3>
+          <ul class="mt-4 space-y-2 text-sm"><li>mahadali3641@gmail.com</li><li>+92 347 1027672</li><li>Johar Town, Lahore</li></ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-6 text-sm text-gray-400 text-center md:text-left">© 2026 NexoraAI. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/main.js"></script>
+</body>
+</html>

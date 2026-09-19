@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexoraAI | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.3.0/dist/flowbite.min.js"></script>
+</head>
+<body class="bg-white text-gray-900">
+  <nav class="bg-gray-950 border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        <a href="index.html" class="text-2xl font-bold text-white">Nexora<span class="text-blue-400">AI</span></a>
+
+        <button id="nav-toggle" class="md:hidden text-white focus:outline-none" aria-label="Toggle menu">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <div id="nav-menu" class="hidden md:flex items-center space-x-6 text-sm font-medium">
+          <a href="index.html" class="text-blue-400">Home</a>
+          <a href="src/pages/about.html" class="text-gray-300 hover:text-white">About</a>
+          <a href="src/pages/contact.html" class="text-gray-300 hover:text-white">Contact</a>
+          <a href="src/pages/signup.html" class="text-gray-300 hover:text-white">Sign Up</a>
+          <a href="src/pages/signin.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Sign In</a>
+        </div>
+      </div>
+
+      <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-3 text-sm font-medium">
+        <a href="index.html" class="block text-blue-400">Home</a>
+        <a href="src/pages/about.html" class="block text-gray-300 hover:text-white">About</a>
+        <a href="src/pages/contact.html" class="block text-gray-300 hover:text-white">Contact</a>
+        <a href="src/pages/signup.html" class="block text-gray-300 hover:text-white">Sign Up</a>
+        <a href="src/pages/signin.html" class="block bg-blue-600 text-white px-4 py-2 rounded-lg text-center">Sign In</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="bg-gray-950 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-400">AI Engineering × Cybersecurity</p>
+            <h1 class="mt-6 text-4xl sm:text-5xl lg:text-7xl font-black leading-tight">Build smarter. <span class="text-blue-400">Defend better.</span></h1>
+            <p class="mt-6 text-lg text-gray-300 max-w-xl">NexoraAI helps businesses design secure, intelligent digital systems that scale with confidence.</p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="src/pages/contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">Start a Project</a>
+              <a href="#features" class="border border-gray-700 hover:bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold transition">Explore Services</a>
+            </div>
+            <div class="mt-10 grid grid-cols-3 gap-6 text-left">
+              <div>
+                <p class="text-3xl font-bold text-white">120+</p>
+                <p class="text-sm text-gray-400">Projects</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-white">99.9%</p>
+                <p class="text-sm text-gray-400">Security</p>
+              </div>
+              <div>
+                <p class="text-3xl font-bold text-white">24/7</p>
+                <p class="text-sm text-gray-400">Support</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="rounded-3xl bg-gradient-to-br from-blue-600 to-cyan-400 p-1 shadow-2xl shadow-blue-900/30">
+              <div class="bg-gray-900 rounded-3xl p-8">
+                <div class="rounded-2xl bg-gray-800 p-6 shadow-lg">
+                  <div class="flex items-center justify-between mb-6">
+                    <span class="text-sm text-blue-300">System Overview</span>
+                    <span class="px-2 py-1 bg-green-500/20 text-green-300 rounded-full text-xs">Secure</span>
+                  </div>
+                  <div class="space-y-4">
+                    <div>
+                      <div class="flex justify-between text-sm text-gray-300 mb-2"><span>Threat Detection</span><span>92%</span></div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-blue-500 h-2.5 rounded-full" style="width:92%"></div></div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm text-gray-300 mb-2"><span>Automation</span><span>86%</span></div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-cyan-400 h-2.5 rounded-full" style="width:86%"></div></div>
+                    </div>
+                    <div>
+                      <div class="flex justify-between text-sm text-gray-300 mb-2"><span>Compliance</span><span>97%</span></div>
+                      <div class="w-full bg-gray-700 rounded-full h-2.5"><div class="bg-green-500 h-2.5 rounded-full" style="width:97%"></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">What we do</p>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-bold">Intelligence and security, built together.</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:-translate-y-1 transition">
+            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 text-xl">AI</div>
+            <h3 class="mt-5 text-xl font-bold">AI Engineering</h3>
+            <p class="mt-3 text-gray-600">Custom AI systems and automations built for productivity, insights, and smarter decision-making.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:-translate-y-1 transition">
+            <div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center text-cyan-600 text-xl">🛡️</div>
+            <h3 class="mt-5 text-xl font-bold">Cybersecurity</h3>
+            <p class="mt-3 text-gray-600">Risk assessments, monitoring, and secure system design to reduce vulnerabilities before they become threats.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:-translate-y-1 transition">
+            <div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center text-indigo-600 text-xl">⚙️</div>
+            <h3 class="mt-5 text-xl font-bold">Automation</h3>
+            <p class="mt-3 text-gray-600">Connect repetitive tasks and workflows into automated systems that improve speed and consistency.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:-translate-y-1 transition">
+            <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 text-xl">📊</div>
+            <h3 class="mt-5 text-xl font-bold">Analytics</h3>
+            <p class="mt-3 text-gray-600">Actionable insights for performance, compliance, and operational improvements across your organization.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:-translate-y-1 transition">
+            <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center text-amber-600 text-xl">🚀</div>
+            <h3 class="mt-5 text-xl font-bold">Growth Strategy</h3>
+            <p class="mt-3 text-gray-600">Technical roadmaps for digital transformation, innovation planning, and secure product scaling.</p>
+          </div>
+          <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 hover:-translate-y-1 transition">
+            <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center text-pink-600 text-xl">🔐</div>
+            <h3 class="mt-5 text-xl font-bold">Compliance</h3>
+            <p class="mt-3 text-gray-600">Security-first design aligned with policy, governance, and industry-standard protections.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200"><p class="text-4xl font-black text-blue-600">8K+</p><p class="mt-2 text-gray-600">Threat alerts reviewed</p></div>
+          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200"><p class="text-4xl font-black text-blue-600">94%</p><p class="mt-2 text-gray-600">Client satisfaction</p></div>
+          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200"><p class="text-4xl font-black text-blue-600">12+</p><p class="mt-2 text-gray-600">Industries served</p></div>
+          <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200"><p class="text-4xl font-black text-blue-600">3x</p><p class="mt-2 text-gray-600">Faster delivery cycles</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-950 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-400">Why choose us</p>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-bold">Built for resilient digital growth.</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6"><h3 class="text-xl font-bold">Strategy-first planning</h3><p class="mt-4 text-gray-300">We align every technical decision with business goals, compliance needs, and operational realities.</p></div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6"><h3 class="text-xl font-bold">Security by design</h3><p class="mt-4 text-gray-300">Every solution includes secure architecture, testing, and continuous improvement from the start.</p></div>
+          <div class="bg-gray-900 border border-gray-800 rounded-2xl p-6"><h3 class="text-xl font-bold">Human-centered delivery</h3><p class="mt-4 text-gray-300">We keep interfaces intuitive, experiences smooth, and outcomes measurable for real teams and users.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-14">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Testimonials</p>
+          <h2 class="mt-4 text-3xl sm:text-4xl font-bold">Trusted by teams building what’s next.</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200"><p class="text-gray-600">“NexoraAI helped us modernize our platform without sacrificing security or usability.”</p><div class="mt-5"><p class="font-bold">Ayesha Khan</p><p class="text-sm text-gray-500">CTO, NorthPeak</p></div></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200"><p class="text-gray-600">“Their team blended AI strategy and cybersecurity in a way that made our roadmap feel clear and actionable.”</p><div class="mt-5"><p class="font-bold">Daniel Moore</p><p class="text-sm text-gray-500">Product Lead, VantaLabs</p></div></div>
+          <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-200"><p class="text-gray-600">“From discovery through delivery, the process was strategic, fast, and incredibly thoughtful.”</p><div class="mt-5"><p class="font-bold">Mehreen Ali</p><p class="text-sm text-gray-500">Operations Director, RedCore</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-blue-600 rounded-3xl p-8 sm:p-12 text-white">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div>
+              <p class="text-sm uppercase tracking-[0.2em] text-blue-200">Ready to begin?</p>
+              <h2 class="mt-3 text-3xl sm:text-4xl font-bold">Let’s build secure, intelligent systems together.</h2>
+            </div>
+            <a href="src/pages/contact.html" class="bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">FAQ</p>
+          <h2 class="mt-4 text-3xl font-bold">Common questions</h2>
+        </div>
+
+        <div id="accordion-collapse" data-accordion="collapse">
+          <h2 id="accordion-collapse-heading-1">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true">
+              <span>What does NexoraAI do?</span>
+              <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" viewBox="0 0 10 6" fill="none"><path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-1" class="p-5 border border-gray-200 border-t-0">
+            <p class="text-gray-600">We build AI systems and cybersecurity solutions for businesses that need better automation, security, and long-term digital performance.</p>
+          </div>
+
+          <h2 id="accordion-collapse-heading-2">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 focus:ring-4 focus:ring-blue-200" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false">
+              <span>Do you work with startups and businesses?</span>
+              <svg data-accordion-icon class="w-3 h-3 shrink-0" aria-hidden="true" viewBox="0 0 10 6" fill="none"><path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-2" class="hidden p-5 border border-gray-200 border-t-0">
+            <p class="text-gray-600">Yes, we support startups, growing teams, and established organizations looking to modernize systems and improve security.</p>
+          </div>
+
+          <h2 id="accordion-collapse-heading-3">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-900 border border-gray-200 rounded-b-xl focus:ring-4 focus:ring-blue-200" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false">
+              <span>Can we start with a small project?</span>
+              <svg data-accordion-icon class="w-3 h-3 shrink-0" aria-hidden="true" viewBox="0 0 10 6" fill="none"><path d="M9 5L5 1L1 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </h2>
+          <div id="accordion-collapse-body-3" class="hidden p-5 border border-gray-200 border-t-0 rounded-b-xl">
+            <p class="text-gray-600">Absolutely. We work with businesses of different sizes and can help with phased or full-scope engagements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-950 text-gray-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <a href="index.html" class="text-2xl font-bold text-white">Nexora<span class="text-blue-400">AI</span></a>
+          <p class="mt-4 text-sm text-gray-400">Secure AI systems for smarter, more resilient digital growth.</p>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white">Navigation</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="src/pages/about.html" class="hover:text-white">About</a></li>
+            <li><a href="src/pages/contact.html" class="hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white">Useful Links</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="src/pages/signup.html" class="hover:text-white">Sign Up</a></li>
+            <li><a href="src/pages/signin.html" class="hover:text-white">Sign In</a></li>
+            <li><a href="src/pages/contact.html" class="hover:text-white">Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold text-white">Contact</h3>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li>hello@nexoraai.com</li>
+            <li>+1 (555) 204-7180</li>
+            <li>Remote / Global</li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 mt-10 pt-6 text-sm text-gray-400 text-center md:text-left">© 2026 NexoraAI. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- Service Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl">
+                <div class="text-4xl mb-5">🤖</div>
+
+                <h3 class="text-xl font-bold text-gray-900">
+                    Agentic AI Solutions
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    Build autonomous AI systems that can reason,
+                    plan, and perform tasks intelligently.
+                </p>
+
+                <a href="src/pages/contact.html"
+                   class="inline-block mt-5 text-blue-600 font-semibold">
+                    Learn More →
+                </a>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl">
+                <div class="text-4xl mb-5">🧠</div>
+
+                <h3 class="text-xl font-bold text-gray-900">
+                    AI Agent Development
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    Custom AI agents designed to automate workflows
+                    and solve real business problems.
+                </p>
+
+                <a href="src/pages/contact.html"
+                   class="inline-block mt-5 text-blue-600 font-semibold">
+                    Learn More →
+                </a>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl">
+                <div class="text-4xl mb-5">🔐</div>
+
+                <h3 class="text-xl font-bold text-gray-900">
+                    Bug Bounty Services
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    Identify security vulnerabilities and help
+                    organizations improve their security posture.
+                </p>
+
+                <a href="src/pages/contact.html"
+                   class="inline-block mt-5 text-blue-600 font-semibold">
+                    Learn More →
+                </a>
+            </div>
+
+
+            <!-- Card 4 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl">
+                <div class="text-4xl mb-5">🔎</div>
+
+                <h3 class="text-xl font-bold text-gray-900">
+                    Vulnerability Research
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    Research and analyze vulnerabilities to help
+                    businesses understand potential security risks.
+                </p>
+
+                <a href="src/pages/contact.html"
+                   class="inline-block mt-5 text-blue-600 font-semibold">
+                    Learn More →
+                </a>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl">
+                <div class="text-4xl mb-5">⚙️</div>
+
+                <h3 class="text-xl font-bold text-gray-900">
+                    AI Automation
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    Automate repetitive business processes using
+                    intelligent AI-powered workflows.
+                </p>
+
+                <a href="src/pages/contact.html"
+                   class="inline-block mt-5 text-blue-600 font-semibold">
+                    Learn More →
+                </a>
+            </div>
+
+
+            <!-- Card 6 -->
+            <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-xl">
+                <div class="text-4xl mb-5">🛡️</div>
+
+                <h3 class="text-xl font-bold text-gray-900">
+                    Security Assessment
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    Assess applications and systems to discover
+                    security weaknesses before attackers do.
+                </p>
+
+                <a href="src/pages/contact.html"
+                   class="inline-block mt-5 text-blue-600 font-semibold">
+                    Learn More →
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section> 
+<!-- Why Nexora Section -->
+<section class="bg-gray-950 text-white py-28">
+
+    <div class="max-w-screen-xl mx-auto px-6">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+            <!-- Left -->
+            <div>
+
+                <span class="text-blue-400 font-semibold
+                             tracking-widest text-sm">
+                    WHY NEXORA
+                </span>
+
+                <h2 class="text-4xl md:text-6xl font-bold
+                           tracking-tight leading-tight mt-5">
+
+                    Intelligence
+                    <br>
+                    with security
+                    <br>
+                    at its core.
+
+                </h2>
+
+            </div>
+
+
+            <!-- Right -->
+            <div>
+
+                <p class="text-xl text-gray-400 leading-relaxed">
+                    AI is changing how businesses operate.
+                    Security determines whether those systems
+                    can be trusted.
+                </p>
+
+                <p class="text-gray-400 leading-relaxed mt-6">
+                    Nexora brings both disciplines together.
+                    We build intelligent technology with security
+                    considered from the beginning—not added as
+                    an afterthought.
+                </p>
+
+
+                <!-- Principles -->
+                <div class="mt-12 space-y-8">
+
+
+                    <!-- Principle 1 -->
+                    <div class="flex gap-5
+                                border-t border-gray-800 pt-6">
+
+                        <span class="text-blue-400 font-bold">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h3 class="text-lg font-bold">
+                                Security First
+                            </h3>
+
+                            <p class="text-gray-500 mt-2">
+                                Security is considered throughout
+                                the design and development process.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Principle 2 -->
+                    <div class="flex gap-5
+                                border-t border-gray-800 pt-6">
+
+                        <span class="text-blue-400 font-bold">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h3 class="text-lg font-bold">
+                                Practical AI
+                            </h3>
+
+                            <p class="text-gray-500 mt-2">
+                                We focus on AI solutions that solve
+                                real problems rather than technology
+                                for technology's sake.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Principle 3 -->
+                    <div class="flex gap-5
+                                border-t border-gray-800 pt-6">
+
+                        <span class="text-blue-400 font-bold">
+                            03
+                        </span>
+
+                        <div>
+
+                            <h3 class="text-lg font-bold">
+                                Built to Scale
+                            </h3>
+
+                            <p class="text-gray-500 mt-2">
+                                Our systems are designed to evolve
+                                alongside the businesses using them.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- AI Solutions -->
+<section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="mb-12">
+            <p class="text-blue-600 font-semibold">AI SOLUTIONS</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+                Practical AI for Modern Businesses
+            </h2>
+            <p class="text-gray-600 mt-4 max-w-2xl">
+                We build simple and useful AI solutions that help businesses
+                automate tasks, improve security, and make better decisions.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-3xl mb-4">🤖</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Business AI
+                </h3>
+                <p class="text-gray-600">
+                    AI solutions that help businesses automate daily tasks
+                    and improve productivity.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-3xl mb-4">🛡️</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Security AI
+                </h3>
+                <p class="text-gray-600">
+                    AI-powered tools that help identify security risks
+                    and protect digital systems.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition">
+                <div class="text-3xl mb-4">🔍</div>
+                <h3 class="text-xl font-bold text-gray-900 mb-3">
+                    Research AI
+                </h3>
+                <p class="text-gray-600">
+                    AI tools that help collect information, analyze data,
+                    and support research.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Security Solutions -->
+<section class="bg-gray-50 py-20">
+
+    <div class="max-w-screen-xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+            <span class="text-blue-600 font-semibold">
+                CYBERSECURITY
+            </span>
+
+            <h2 class="text-4xl font-bold text-gray-900 mt-3">
+                Protect What Matters Most
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Proactive security services designed to identify
+                weaknesses and reduce digital risks.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border">
+                <div class="text-4xl">🎯</div>
+                <h3 class="text-xl font-bold mt-5">
+                    Vulnerability Assessment
+                </h3>
+                <p class="text-gray-600 mt-3">
+                    Identify weaknesses in applications and systems.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border">
+                <div class="text-4xl">🐞</div>
+                <h3 class="text-xl font-bold mt-5">
+                    Bug Bounty
+                </h3>
+                <p class="text-gray-600 mt-3">
+                    Discover and responsibly report security issues.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-sm border">
+                <div class="text-4xl">🔬</div>
+                <h3 class="text-xl font-bold mt-5">
+                    Security Research
+                </h3>
+                <p class="text-gray-600 mt-3">
+                    Research emerging vulnerabilities and security risks.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- How It Works -->
+<section class="bg-white py-20">
+
+    <div class="max-w-screen-xl mx-auto px-6">
+
+        <div class="text-center mb-12">
+            <span class="text-blue-600 font-semibold">
+                HOW IT WORKS
+            </span>
+
+            <h2 class="text-4xl font-bold text-gray-900 mt-3">
+                From Idea to Intelligent Security
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Our simple process helps businesses move from
+                identifying a problem to deploying a secure solution.
+            </p>
+        </div>
+
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Step 1 -->
+            <div class="relative text-center p-8">
+
+                <div class="w-16 h-16 mx-auto flex items-center justify-center
+                            bg-blue-100 text-blue-600 rounded-full
+                            text-2xl font-bold">
+                    01
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    Discover
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    We understand your business, technology,
+                    security requirements, and challenges.
+                </p>
+
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="relative text-center p-8">
+
+                <div class="w-16 h-16 mx-auto flex items-center justify-center
+                            bg-blue-100 text-blue-600 rounded-full
+                            text-2xl font-bold">
+                    02
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    Build & Secure
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    We build intelligent solutions and identify
+                    potential security weaknesses.
+                </p>
+
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="relative text-center p-8">
+
+                <div class="w-16 h-16 mx-auto flex items-center justify-center
+                            bg-blue-100 text-blue-600 rounded-full
+                            text-2xl font-bold">
+                    03
+                </div>
+
+                <h3 class="text-xl font-bold text-gray-900 mt-6">
+                    Deploy & Improve
+                </h3>
+
+                <p class="text-gray-600 mt-3">
+                    We deploy the solution and continuously improve
+                    its performance and security.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Stats / Trust Section -->
+<section class="bg-gray-900 text-white py-16">
+
+    <div class="max-w-screen-xl mx-auto px-6">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <!-- Stat 1 -->
+            <div>
+                <div class="text-4xl font-extrabold text-blue-400">
+                    24/7
+                </div>
+
+                <p class="text-gray-400 mt-2">
+                    Security Focus
+                </p>
+            </div>
+
+
+            <!-- Stat 2 -->
+            <div>
+                <div class="text-4xl font-extrabold text-blue-400">
+                    100%
+                </div>
+
+                <p class="text-gray-400 mt-2">
+                    Custom Solutions
+                </p>
+            </div>
+
+
+            <!-- Stat 3 -->
+            <div>
+                <div class="text-4xl font-extrabold text-blue-400">
+                    AI
+                </div>
+
+                <p class="text-gray-400 mt-2">
+                    Powered Innovation
+                </p>
+            </div>
+
+
+            <!-- Stat 4 -->
+            <div>
+                <div class="text-4xl font-extrabold text-blue-400">
+                    360°
+                </div>
+
+                <p class="text-gray-400 mt-2">
+                    Security Approach
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-blue-600 text-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Ready to Build Something Smarter?
+        </h2>
+
+        <p class="text-blue-100 max-w-2xl mx-auto mb-8">
+            Let's create secure and intelligent solutions for your
+            business with AI and cybersecurity.
+        </p>
+
+        <a href="src/pages/contact.html"
+           class="inline-block bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            Contact Us
+        </a>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-950 text-gray-300">
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- Company -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-4">
+                    Nexora<span class="text-blue-500">AI</span>
+                </h2>
+
+                <p class="text-gray-400">
+                    AI and cybersecurity solutions for modern businesses.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">
+                    Quick Links
+                </h3>
+
+                <div class="space-y-2">
+                    <a href="index.html" class="block hover:text-white">Home</a>
+                    <a href="src/pages/about.html" class="block hover:text-white">About</a>
+                    <a href="src/pages/contact.html" class="block hover:text-white">Contact</a>
+                </div>
+            </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-white font-semibold mb-4">
+                    Services
+                </h3>
+
+                <p class="text-gray-400">AI Solutions</p>
+                <p class="text-gray-400">Cybersecurity</p>
+                <p class="text-gray-400">AI Automation</p>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 mt-10 pt-6 text-center">
+            <p class="text-gray-500 text-sm">
+                © 2026 NexoraAI. All Rights Reserved.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+
+</body>
+</html>
